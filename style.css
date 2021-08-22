@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 section{
     position: relative;
     width: 100%;
@@ -16,6 +17,7 @@ section{
     background: #001300;
     animation: changeColor 5s linear infinite;
 }
+
 @keyframes changeColor{
     0%{
         filter: hue-rotate(0deg)
@@ -24,16 +26,19 @@ section{
         filter: hue-rotate(360deg);
     }
 }
+
 section h2{
     color: #00ff0a;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
     letter-spacing: 10px;
 }
+
 section .loader{
     position: relative;
     display: flex;
 }
+
 section .loader .dot{
     position: relative;
     display: block;
@@ -52,9 +57,11 @@ section .loader .dot{
     animation: animateDot 2s linear infinite;
     animation-delay: calc(0.1s * var(--i));
 }
+
 section .loader:last-child .dot{
     animation-delay: calc(-0.1s * var(--i));
 }
+
 @keyframes animateDot{
     0%{
         transform: scale(0.1);
